@@ -3,30 +3,115 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar {
+.hero{
+    position: relative;
+    height: 100vh;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('caffee1.jpg');
+    background-size: cover;
+    background-position: center;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
+    justify-content: center;
+    background-repeat: no-repeat;
 }
-.navbar .logo {
+
+.hero-content {
+    padding-top: 80px;
+    max-width: 600px;
+    margin-left: 100px;
     color: #fff;
+}
+
+.welcome{
+    color:#d4a15d;
     font-size: 24px;
-    font-weight: bold;
+    font-style:italic;
+    margin-bottom: 10px;
 }
-.navbar .nav-links {
-    list-style: none;
+
+.hero-content h1 {
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-desc{
+    font-size: 22px;
+    color: #f5f5f5;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.hero-buttons{
     display: flex;
+    gap: 20px;
 }
-.navbar .nav-links li {
-    margin-left: 20px;
+
+.btn{
+    background-color: #d4a15d;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 .navbar .nav-links li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
-.navbar .nav-links li a:hover {
-    color: #5b1a12;
+
+.btn-outline{
+    boarder: 2px solid #d4a15d;
+    color:#fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    boarder-radius: 8px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    transition: transform 0.3s;
+}
+
+.btn-outline:hover{
+    bqorder-color: #d4a15d;
+    transition: 0.3s;
+}
+
+.navbar{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 20px 50px;
+}
+
+.logo{
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.nav-links{
+    margin-right: 50px;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
 }

@@ -101,7 +101,7 @@
     border-color: #fff;          
 }
 
-/* Navbar */
+
 .navbar {
     position: absolute;
     top: 0;
@@ -142,9 +142,11 @@
 }
 
 .about-section {
+  min-height: 90vh;
   padding: 60px 20px;
   background: #fdfdfd;
   font-family: Arial, sans-serif;
+  padding-to: 80px;
 }
 
 .about-container {
@@ -214,6 +216,98 @@
 }
 
 .learn-btn:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
   background: #7a3e1d;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #a0522d;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+
+.menu-section {
+  min-height: 80vh;
+  padding: 80px 50px;
+  background: #fdfdfd;
+  text-align: center;
+}
+
+.menu-heading {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu-card h3 {
+  margin-bottom: 10px;
+  color: #a0522d;
+}
+
+.menu-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.about-section,
+.menu-section{
+    padding:80px 10%;
+}

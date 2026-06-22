@@ -18,5 +18,3 @@ Ashvini Ingole
 
 ## Live Demo
 https://ashvini-28.github.io/ashvora-cafe/
-
-#improved the hero section

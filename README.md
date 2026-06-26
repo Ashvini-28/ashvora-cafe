@@ -1,7 +1,7 @@
 # Ashvora Cafe 
 Ashvora Cafe is a mordern cafe website that combines a cozy cafe experience with a creative art community. The website showcase an art gallery, featured artists, a cafe menu, and a contact section in a clean and responsive design.
 
-##features
+# Features
 -Responsive Navbar
 -Full screen Hero Section
 -Cafe Background Image
